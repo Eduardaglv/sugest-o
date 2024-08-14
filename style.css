@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #eeddcc;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    background-color: #5f6f52;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+footer {
+    width: 100%;
+    background-color: #5f6f52;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    color: #ffffff;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #eeddcc;
+}
+.menu h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.vinyl {
+    width: 150px;
+    height: 150px;
+    background-image: url('https://i.pinimg.com/236x/7f/e2/48/7fe24800cc289c509364503628865802.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    animation: spin 3s linear infinite; 
+}
+
+.vinyl:hover {
+    transform: scale(1.1);
+}
+
+.hidden {
+    display: none;
+}
+
+#musicSuggestion {
+    text-align: center;
+    font-size: 18px;
+}
+
+#songTitle {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#artistName {
+    color: #555;
+}
+
+.album-cover {
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
